@@ -4,7 +4,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
     
 <style>
@@ -43,18 +43,59 @@
   font-style: normal;
   text-align: center;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.container {
+  border: 3px solid #f1f1f1;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.top {
+  padding: 10px;
+  background: #f1f1f1;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.content {
+  padding: 10px;
 </style>
 
 <h1 class="header">Loreena Peragine, M.S.</h1>
 </head>
 <body>
 <img src="2023-09-27%2016_13_56.084-0500%20(2).jpg" alt="Headshot" class="left-img"/>
-<p class="inter-p">Senior full stack software developer<br>
-<i>(563)-570-9654 <br>
-loreenaperagine.development@gmail.com <br>
-https://www.linkedin.com/in/loreenaperagine/<br>
-</i><br></p>
+
+<div class="container">
+  <div class="top">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <div class="content">
+    <p class="inter-p">Senior full stack software developer<br>
+    <i>(563)-570-9654 <br>
+    loreenaperagine.development@gmail.com <br>
+    https://www.linkedin.com/in/loreenaperagine/<br>
+    </i><br></p>
+  </div>
+</div>
     
+
+
 <h2 class="inter-p">Academic Credentials</h2>
 <p class="inter-p"><b>M.S. Information Technology Management (4+1)</b>, St. Ambrose University, 2023<br>
 <b>B.S. Computer Science</b>, St. Ambrose University, 2022
