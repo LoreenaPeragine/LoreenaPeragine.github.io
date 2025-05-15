@@ -5,8 +5,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-    
 <style>
     
 .inconsolata-header {
@@ -74,41 +72,22 @@
 
 .content {
   padding: 10px;
-
-body {
-  background: #333;
-  padding-top: 5em;
-  display: flex;
-  justify-content: center;
-}
-
-.typewriter h1 {
-  color: #fff;
-  font-family: monospace;
-  overflow: hidden; 
-  border-right: .15em solid black; 
-  white-space: nowrap; 
-  margin: 0 auto; 
-  letter-spacing: .15em; 
-  animation: 
-    typing 3.5s steps(30, end),
-    blink-caret 1s step-end infinite;
-}
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: black }
-}
 </style>
+<script>
+var i = 0;
+var txt = 'Loreena Peragine, M.S.';
+var speed = 50;
 
-<div class="typewriter">
-  <h1>Loreena Peragine</h1>
-</div>
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+    typeWriter();
+</script>
+<h1 class="header">Loreena Peragine, M.S.</h1>
 </head>
 <body>
 <img src="unnamed.jpg" alt="Headshot" class="left-img"/>
