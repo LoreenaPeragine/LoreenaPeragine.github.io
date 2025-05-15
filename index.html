@@ -75,8 +75,16 @@
 .content {
   padding: 10px;
 
+body {
+  background: #333;
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
+}
+
 .typewriter h1 {
-  font-family: "Inconsolata", monospace;
+  color: #fff;
+  font-family: monospace;
   overflow: hidden; 
   border-right: .15em solid black; 
   white-space: nowrap; 
@@ -87,12 +95,10 @@
     blink-caret 1s step-end infinite;
 }
 
-
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
 }
-
 
 @keyframes blink-caret {
   from, to { border-color: transparent }
@@ -101,7 +107,7 @@
 </style>
 
 <div class="typewriter">
-    <h1>Loreena Peragine, M.S.</h1>
+  <h1>Loreena Peragine</h1>
 </div>
 </head>
 <body>
