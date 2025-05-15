@@ -74,9 +74,33 @@
 
 .content {
   padding: 10px;
+
+.typewriter h1 {
+  font-family: "Inconsolata", monospace;
+  overflow: hidden; 
+  border-right: .15em solid black; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret 1s step-end infinite;
+}
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black }
+}
 </style>
 
-<h1 class="header">Loreena Peragine, M.S.</h1>
+<h1 class="typewriter">Loreena Peragine, M.S.</h1>
 </head>
 <body>
 <img src="unnamed.jpg" alt="Headshot" class="left-img"/>
