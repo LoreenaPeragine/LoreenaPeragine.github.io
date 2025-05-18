@@ -34,6 +34,13 @@
   font-style: normal;
   text-align: center;
 }
+.inter-p-bold {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  text-align: left;
+}
 .header {
   font-size: 30px
   padding: 10px;
@@ -99,42 +106,49 @@
   </div>
 
   <div class="content">
-<p class="inter-p"><b>M.S. Information Technology Management (4+1)</b>, St. Ambrose University, 2023<br>
+<!--<p class="inter-p"><b>M.S. Information Technology Management (4+1)</b>, St. Ambrose University, 2023<br>
 <b>B.S. Computer Science</b>, St. Ambrose University, 2022
-<br></p>
+<br></p>-->
 
-<!--<p id="demo"></p>
+
+<p id="writeOne" class="inter-p-bold"></p>
 
 <script>
-var i = 0;
-var txt = 'M.S. Information Technology Management (4+1), St. Ambrose University, 2023';
+var j = 0;
+var txtOne = 'M.S. Information Technology Management (4+1)';
 var speed = 50;
 
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("demo").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
+function typeWriterOne() {
+  if (j < txtOne.length) {
+    document.getElementById("writeOne").innerHTML += txtOne.charAt(j);
+    j++;
+    setTimeout(typeWriterOne, speed);
   }
 }
 
-<p id="demo2"></p>
+typeWriterOne();
+</script>
+
+
+<p id="writeTwo" class="inter-p-bold"></p>
 
 <script>
 var i = 0;
-var txt = 'B.S. Computer Science, ,St. Ambrose University, 2022';
+var txtTwo = 'B.S. Computer Science';
 var speed = 50;
 
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("demo2").innerHTML += txt.charAt(i);
+function typeWriterTwo() {
+  if (i < txtTwo.length) {
+    document.getElementById("writeTwo").innerHTML += txtTwo.charAt(i);
     i++;
-    setTimeout(typeWriter, speed);
+    setTimeout(typeWriterTwo, speed);
   }
 }
 
-typeWriter();
-</script>-->
+typeWriterTwo();
+</script>
+
+</script>
 
       </div>
 </div>
