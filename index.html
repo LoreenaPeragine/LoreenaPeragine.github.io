@@ -106,47 +106,75 @@
   </div>
 
   <div class="content">
-<!--<p class="inter-p"><b>M.S. Information Technology Management (4+1)</b>, St. Ambrose University, 2023<br>
+<p class="inter-p"><b>M.S. Information Technology Management (4+1)</b>, St. Ambrose University, 2023<br>
 <b>B.S. Computer Science</b>, St. Ambrose University, 2022
-<br></p>-->
+<br></p>
 
-
-<p id="writeOne" class="inter-p-bold"></p>
-
+<!--<div id="writeOne">
+  <b id="boldPartOne" class="inter-p-bold"></b><span id="normalPartOne" class="inter-p"></span><br>
+  </div>
+<div id="writeTwo">
+  <b id="boldPartTwo" class="inter-p-bold"></b><span id="normalPartTwo" class="inter-p"></span>
+  </div>
+  
+  
 <script>
-var j = 0;
-var txtOne = 'M.S. Information Technology Management (4+1)';
-var speed = 50;
+  var boldOne = 'M.S. Information Technology Management (4+1)';
+  var normalOne = ' St. Ambrose University, 2023';
+  var boldTwo = 'B.S. Computer Science';
+  var normalTwo = ' St. Ambrose University, 2022'
+  
+  var speedBold = 80;
+  var speedNormal = 20;
 
-function typeWriterOne() {
-  if (j < txtOne.length) {
-    document.getElementById("writeOne").innerHTML += txtOne.charAt(j);
-    j++;
-    setTimeout(typeWriterOne, speed);
+  let i = 0;
+  let j = 0;
+  let k = 0;
+  let l = 0;
+
+  function typeBoldPartOne() {
+    if (i < boldOne.length) {
+      document.getElementById("boldPartOne").innerHTML += boldOne.charAt(i);
+      i++;
+      setTimeout(typeBoldPartOne, speedBold);
+    } else {
+      typeNormalPartOne();
+    }
   }
-}
 
-typeWriterOne();
-</script>
-
-
-<p id="writeTwo" class="inter-p-bold"></p>
-
-<script>
-var i = 0;
-var txtTwo = 'B.S. Computer Science';
-var speed = 50;
-
-function typeWriterTwo() {
-  if (i < txtTwo.length) {
-    document.getElementById("writeTwo").innerHTML += txtTwo.charAt(i);
-    i++;
-    setTimeout(typeWriterTwo, speed);
+  function typeNormalPartOne() {
+    if (j < normalOne.length) {
+      document.getElementById("normalPartOne").innerHTML += normalOne.charAt(j);
+      j++;
+      setTimeout(typeNormalPartOne, speedNormal);
+    } else {
+      typeBoldPartTwo();
+    }
   }
-}
 
-typeWriterTwo();
-</script>
+  
+  function typeBoldPartTwo() {
+    if (k < boldTwo.length) {
+      document.getElementById("boldPartTwo").innerHTML += boldTwo.charAt(k);
+      k++;
+      setTimeout(typeBoldPartTwo, speedBold);
+    } else {
+      typeNormalPartTwo();
+    }
+  }
+
+  function typeNormalPartTwo() {
+    if (l < normalTwo.length) {
+      document.getElementById("normalPartTwo").innerHTML += normalTwo.charAt(l);
+      l++;
+      setTimeout(typeNormalPartTwo, speedNormal);
+    }
+  }
+
+  typeBoldPartOne();
+</script>-->
+
+
 
 </script>
 
