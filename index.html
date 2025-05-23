@@ -102,80 +102,71 @@
     <span class="dot"></span>
     <span class="dot"></span>
     <span class="dot"></span>
-    <h2 class="inter-p">Academic Credentials</h2>
+    <h2 class="inter-p">Education</h2>
   </div>
 
   <div class="content">
-<p class="inter-p"><b>M.S. Information Technology Management (4+1)</b>, St. Ambrose University, 2023<br>
-<b>B.S. Computer Science</b>, St. Ambrose University, 2022
-<br></p>
 
-<!--<div id="writeOne">
-  <b id="boldPartOne" class="inter-p-bold"></b><span id="normalPartOne" class="inter-p"></span><br>
-  </div>
-<div id="writeTwo">
-  <b id="boldPartTwo" class="inter-p-bold"></b><span id="normalPartTwo" class="inter-p"></span>
-  </div>
-  
-  
+<div id="degreeLineOne">
+  <b id="degreeOneBold" class="inter-p-bold"></b><span id="degreeOneNormal" class="inter-p"></span><br>
+</div>
+<div id="degreeLineTwo">
+  <b id="degreeTwoBold" class="inter-p-bold"></b><span id="degreeTwoNormal" class="inter-p"></span>
+</div>
+
 <script>
-  var boldOne = 'M.S. Information Technology Management (4+1)';
-  var normalOne = ' St. Ambrose University, 2023';
-  var boldTwo = 'B.S. Computer Science';
-  var normalTwo = ' St. Ambrose University, 2022'
-  
-  var speedBold = 80;
-  var speedNormal = 20;
+  var degreeOneBoldText = 'M.S. Information Technology Management (4+1)';
+  var degreeOneNormalText = ' St. Ambrose University, 2023';
+  var degreeTwoBoldText = 'B.S. Computer Science';
+  var degreeTwoNormalText = ' St. Ambrose University, 2022';
+
+  var delayBold = 80;
+  var delayNormal = 20;
 
   let i = 0;
   let j = 0;
   let k = 0;
   let l = 0;
 
-  function typeBoldPartOne() {
-    if (i < boldOne.length) {
-      document.getElementById("boldPartOne").innerHTML += boldOne.charAt(i);
+  function typeDegreeOneBold() {
+    if (i < degreeOneBoldText.length) {
+      document.getElementById("degreeOneBold").innerHTML += degreeOneBoldText.charAt(i);
       i++;
-      setTimeout(typeBoldPartOne, speedBold);
+      setTimeout(typeDegreeOneBold, delayBold);
     } else {
-      typeNormalPartOne();
+      typeDegreeOneNormal();
     }
   }
 
-  function typeNormalPartOne() {
-    if (j < normalOne.length) {
-      document.getElementById("normalPartOne").innerHTML += normalOne.charAt(j);
+  function typeDegreeOneNormal() {
+    if (j < degreeOneNormalText.length) {
+      document.getElementById("degreeOneNormal").innerHTML += degreeOneNormalText.charAt(j);
       j++;
-      setTimeout(typeNormalPartOne, speedNormal);
+      setTimeout(typeDegreeOneNormal, delayNormal);
     } else {
-      typeBoldPartTwo();
+      typeDegreeTwoBold();
     }
   }
 
-  
-  function typeBoldPartTwo() {
-    if (k < boldTwo.length) {
-      document.getElementById("boldPartTwo").innerHTML += boldTwo.charAt(k);
+  function typeDegreeTwoBold() {
+    if (k < degreeTwoBoldText.length) {
+      document.getElementById("degreeTwoBold").innerHTML += degreeTwoBoldText.charAt(k);
       k++;
-      setTimeout(typeBoldPartTwo, speedBold);
+      setTimeout(typeDegreeTwoBold, delayBold);
     } else {
-      typeNormalPartTwo();
+      typeDegreeTwoNormal();
     }
   }
 
-  function typeNormalPartTwo() {
-    if (l < normalTwo.length) {
-      document.getElementById("normalPartTwo").innerHTML += normalTwo.charAt(l);
-      l++;
-      setTimeout(typeNormalPartTwo, speedNormal);
+  function typeDegreeTwoNormal() {
+    if (l < degreeTwoNormalText.length) {
+      document.getElementById("degreeTwoNormal").innerHTML += degreeTwoNormalText.charAt(l);
+    l++;
+      setTimeout(typeDegreeTwoNormal, delayNormal);
     }
   }
 
-  typeBoldPartOne();
-</script>-->
-
-
-
+  typeDegreeOneBold();
 </script>
 
       </div>
@@ -187,16 +178,97 @@
     <span class="dot"></span>
     <span class="dot"></span>
     <span class="dot"></span>
-    <h2 class="inter-p">Technologies</h2>
+    <h2 class="inter-p">Skills</h2>
   </div>
-    
+
 <div class="content">
-<p class="inter-p"><b>Languages</b><br>
-JavaScript, HTML, SASS, CSS <br> Python, Java, C# <br> XML, YAML<br>
-<b>Tools/Technologies</b><br>
-Azure DevOps, Azure Data Factory, Azure Data Studio <br> Microsoft SQL Server – SSRS, SSMS, SSIS <br> .NET, .NET Core, .NET Framework, Entity Framework <br> GitHub, Git <br> JSON <br> Bootstrap <br>
-<b>Data Analytics</b><br>
-pandas, Jupyter Notebook, TensorFlow, NumPy, Keras, Anaconda, CoLab, MATLAB<br></p>
+  <div id="technologyLineOne">
+    <b id="technologyOneBold" class="inter-p-bold"></b><span id="technologyOneNormal" class="inter-p"></span><br>
+  </div>
+  <div id="technologyLineTwo">
+    <b id="technologyTwoBold" class="inter-p-bold"></b><span id="technologyTwoNormal" class="inter-p"></span>
+  </div>
+  <div id="technologyLineThree">
+    <b id="technologyThreeBold" class="inter-p-bold"></b><span id="technologyThreeNormal" class="inter-p"></span>
+  </div>
+
+  <script>
+    var technologyOneBoldText = 'Languages:';
+    var technologyOneNormalText = ' JavaScript, HTML, SASS, CSS, Python, Java, C#, XML, YAML';
+    var technologyTwoBoldText = 'Tools:';
+    var technologyTwoNormalText = ' Azure DevOps, Azure Data Factory, Azure Data Studio, Microsoft SQL Server - SSRS, SSMS, SSIS, .NET, .NET Core, .NET Framework, Entity Framework, GitHub, Git, JSON, Bootstrap';
+    var technologyThreeBoldText = 'Machine Learning/Data Engineering:';
+    var technologyThreeNormalText = ' pandas, Jupyter Notebook, TensorFlow, NumPy, Keras, Anaconda, CoLab, MATLAB';
+
+    let m = 0;
+    let n = 0;
+    let o = 0;
+    let p = 0;
+    let q = 0;
+    let r = 0;
+
+    function typeTechnologyOneBold() {
+      if (m < technologyOneBoldText.length) {
+        document.getElementById("technologyOneBold").innerHTML += technologyOneBoldText.charAt(m);
+        m++;
+        setTimeout(typeTechnologyOneBold, delayBold);
+      } else {
+        typeTechnologyOneNormal();
+      }
+    }
+
+    function typeTechnologyOneNormal() {
+      if (n < technologyOneNormalText.length) {
+        document.getElementById("technologyOneNormal").innerHTML += technologyOneNormalText.charAt(n);
+        n++;
+        setTimeout(typeTechnologyOneNormal, delayNormal);
+      } else {
+        typeTechnologyTwoBold();
+      }
+    }
+
+    function typeTechnologyTwoBold() {
+      if (o < technologyTwoBoldText.length) {
+        document.getElementById("technologyTwoBold").innerHTML += technologyTwoBoldText.charAt(o);
+        o++;
+        setTimeout(typeTechnologyTwoBold,  delayBold);
+      } else {
+        typeTechnologyTwoNormal();
+      }
+    }
+
+    function typeTechnologyTwoNormal() {
+      if (p < technologyTwoNormalText.length) {
+        document.getElementById("technologyTwoNormal").innerHTML += technologyTwoNormalText.charAt(p);
+        p++;
+        setTimeout(typeTechnologyTwoNormal,  delayNormal);
+      } else {
+        typeTechnologyThreeBold();
+      }
+    }
+
+    function typeTechnologyThreeBold() {
+      if (q < technologyThreeBoldText.length) {
+        document.getElementById("technologyThreeBold").innerHTML += technologyThreeBoldText.charAt(q);
+        q++;
+        setTimeout(typeTechnologyThreeBold,  delayBold);
+      } else {
+        typeTechnologyThreeNormal();
+      }
+    }
+
+    function typeTechnologyThreeNormal() {
+      if (r < technologyThreeNormalText.length) {
+        document.getElementById("technologyThreeNormal").innerHTML += technologyThreeNormalText.charAt(r);
+        r++;
+        setTimeout(typeTechnologyThreeNormal, delayNormal);
+      }
+    }
+
+    typeTechnologyOneBold();
+  </script>
+</div>
+
  </div>
 </div>
 
@@ -208,13 +280,98 @@ pandas, Jupyter Notebook, TensorFlow, NumPy, Keras, Anaconda, CoLab, MATLAB<br><
     <span class="dot"></span>
     <span class="dot"></span>
     <span class="dot"></span>
-    <h2 class="inter-p">Career</h2>
+    <h2 class="inter-p">Experience</h2>
   </div>
 <div class="content">
-<p class="inter-p"><b>BITCO Insurance Companies</b><br>
-Senior Software Developer, 2022 - present<br>
-<b>The University of Iowa</b><br>
-Research Associate - NSF Research Experiences for Undergraduates, Summer 2021<br></p>
+
+<div id="experienceLineOne">
+  <b id="experienceOneBold" class="inter-p-bold"></b><span id="experienceOneNormal" class="inter-p"></span><br>
+</div>
+<div id="experienceLineTwo">
+  <b id="experienceTwoBold" class="inter-p-bold"></b><span id="experienceTwoNormal" class="inter-p"></span>
+</div>
+<div id="experienceLineThree">
+  <b id="experienceThreeBold" class="inter-p-bold"></b><span id="experienceThreeNormal" class="inter-p"></span>
+</div>
+
+<script>
+  var experienceOneBoldText = 'BITCO Insurance Companies ';
+  var experienceOneNormalText = 'Senior Full Stack Software Developer, 2024 - Present';
+  var experienceTwoBoldText = 'BITCO Insurance Companies ';
+  var experienceTwoNormalText = 'Full Stack Software Developer, 2022 - 2024';
+  var experienceThreeBoldText = 'The University of Iowa ';
+  var experienceThreeNormalText = 'Research Associate - NSF Research Experiences for Undergraduates, Summer 2021';
+
+  let s = 0;
+  let t = 0;
+  let u = 0;
+  let v = 0;
+  let w = 0;
+  let x = 0;
+
+  function typeExperienceOneBold() {
+    if (s < experienceOneBoldText.length) {
+      document.getElementById("experienceOneBold").innerHTML += experienceOneBoldText.charAt(s);
+      s++;
+      setTimeout(typeExperienceOneBold, delayBold);
+    } else {
+      typeExperienceOneNormal();
+    }
+  }
+
+  function typeExperienceOneNormal() {
+    if (t < experienceOneNormalText.length) {
+      document.getElementById("experienceOneNormal").innerHTML += experienceOneNormalText.charAt(t);
+      t++;
+      setTimeout(typeExperienceOneNormal, delayNormal);
+    } else {
+      typeExperienceTwoBold();
+    }
+  }
+
+  function typeExperienceTwoBold() {
+    if (u < experienceTwoBoldText.length) {
+      document.getElementById("experienceTwoBold").innerHTML += experienceTwoBoldText.charAt(u);
+      u++;
+      setTimeout(typeExperienceTwoBold, delayBold);
+    } else {
+      typeExperienceTwoNormal();
+    }
+  }
+
+  function typeExperienceTwoNormal() {
+    if (v < experienceTwoNormalText.length) {
+      document.getElementById("experienceTwoNormal").innerHTML += experienceTwoNormalText.charAt(v);
+      v++;
+      setTimeout(typeExperienceTwoNormal, delayNormal);
+    } else {
+      typeExperienceThreeBold();
+    }
+  }
+
+  function typeExperienceThreeBold() {
+    if (w < experienceThreeBoldText.length) {
+      document.getElementById("experienceThreeBold").innerHTML += experienceThreeBoldText.charAt(w);
+      w++;
+      setTimeout(typeExperienceThreeBold, delayBold);
+    } else {
+      typeExperienceThreeNormal();
+    }
+  }
+
+  function typeExperienceThreeNormal() {
+    if (x < experienceThreeNormalText.length) {
+      document.getElementById("experienceThreeNormal").innerHTML += experienceThreeNormalText.charAt(x);
+      x++;
+      setTimeout(typeExperienceThreeNormal, delayNormal);
+    }
+  }
+
+  typeExperienceOneBold();
+</script>
+
+
+
 </div>
 </div>
 <br>
